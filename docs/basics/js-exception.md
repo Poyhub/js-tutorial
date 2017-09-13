@@ -1,10 +1,10 @@
 # JavaScript 异常
 
-- *try* ：语句测试代码块的错误。
-- *catch* ：语句处理错误。
-- *throw* ：语句创建自定义错误。
+- **try ：**语句测试代码块的错误。
+- **catch ：**语句处理错误。
+- **throw ：**语句创建自定义错误。
 
-## 错误一定会发生
+## 错误
 
 当 JavaScript 引擎执行 JavaScript 代码时，会发生各种错误：
 
@@ -17,17 +17,17 @@
 
 描述这种情况的术语是：JavaScript 将抛出一个异常。
 
-## try catch
+## try 和 catch
 
-*try* 语句允许我们定义在执行时进行错误测试的代码块。
+**try** 语句允许我们定义在执行时进行错误测试的代码块。
 
-*catch* 语句允许我们定义当 try 代码块发生错误时，所执行的代码块。
+**catch** 语句允许我们定义当 try 代码块发生错误时，所执行的代码块。
 
 JavaScript 语句 *try* 和 *catch* 是成对出现的。
 
 语法
 
-```
+```javascript
 try
   {
   //在这里运行代码
@@ -36,7 +36,6 @@ catch(err)
   {
   //在这里处理错误
   }
-
 ```
 
 实例
@@ -45,7 +44,7 @@ catch(err)
 
 catch 块会捕捉到 try 块中的错误，并执行代码来处理它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,13 +78,13 @@ catch(err)
 
 throw 语句允许我们创建自定义错误。
 
-正确的技术术语是：创建或*抛出异常*（exception）。
+正确的技术术语是：创建或**抛出异常（exception）**。
 
 如果把 throw 与 try 和 catch 一起使用，那么您能够控制程序流，并生成自定义的错误消息。
 
 语法
 
-```
+```javascript
 throw exception
 ```
 
@@ -95,7 +94,7 @@ throw exception
 
 本例检测输入变量的值。如果值是错误的，会抛出一个异常（错误）。catch 会捕捉到这个错误，并显示一段自定义的错误消息：
 
-```
+```html
 <script>
 function myFunction()
 {

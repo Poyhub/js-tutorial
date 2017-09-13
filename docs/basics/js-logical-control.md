@@ -2,42 +2,41 @@
 
 ## 条件语句
 
-**条件语句用于基于不同的条件来执行不同的动作。**
+> **条件语句用于基于不同的条件来执行不同的动作。**
+>
 
 通常在写代码时，您总是需要为不同的决定来执行不同的动作。您可以在代码中使用条件语句来完成该任务。
 
 在 JavaScript 中，我们可使用以下条件语句：
 
-- *if 语句* - 只有当指定条件为 true 时，使用该语句来执行代码
-- *if...else 语句* - 当条件为 true 时执行代码，当条件为 false 时执行其他代码
-- *if...else if....else 语句* - 使用该语句来选择多个代码块之一来执行
-- *switch 语句* - 使用该语句来选择多个代码块之一来执行
+- **if 语句** - 只有当指定条件为 true 时，使用该语句来执行代码
+- **if...else 语句** - 当条件为 true 时执行代码，当条件为 false 时执行其他代码
+- **if...else if....else 语句** - 使用该语句来选择多个代码块之一来执行
+- **switch 语句** - 使用该语句来选择多个代码块之一来执行
 
 ### if 语句
 
 只有当指定条件为 true 时，该语句才会执行代码。
 
-语法
+**语法**
 
-```
-if (条件)
-  {
-  只有当条件为 true 时执行的代码
-  }
-
+```javascript
+if (condition) {
+  // 只有当条件为 true 时执行的代码
+}
 ```
 
-注意：请使用小写的 if。使用大写字母（IF）会生成 JavaScript 错误！
+> 注意：请使用小写的 if。使用大写字母（IF）会生成 JavaScript 错误！
+>
 
-实例
+**实例**
 
 当时间小于 20:00 时，生成一个“Good day”问候：
 
-```
-if (time<20)
-  {
-  x="Good day";
-  }
+```javascript
+if (time < 20) {
+  x = "Good day";
+}
 ```
 
 x 的结果是：
@@ -54,32 +53,25 @@ Good day
 
 语法
 
-```
-if (条件)
-  {
-  当条件为 true 时执行的代码
-  }
-else
-  {
-  当条件不为 true 时执行的代码
-  }
-
+```javascript
+if (condition) {
+  // 当条件为 true 时执行的代码
+} else {
+  // 当条件不为 true 时执行的代码
+}
 ```
 
 实例
 
 当时间小于 20:00 时，将得到问候 "Good day"，否则将得到问候 "Good evening"。
 
-```
-if (time<20)
-  {
-  x="Good day";
-  }
-else
-  {
-  x="Good evening";
-  }
-
+```javascript
+if (time < 20) {
+  x = "Good day";
+}
+else {
+  x = "Good evening";
+}
 ```
 
 x 的结果是：
@@ -94,39 +86,32 @@ Good day
 
 语法
 
-```
-if (条件 1)
-  {
-  当条件 1 为 true 时执行的代码
-  }
-else if (条件 2)
-  {
-  当条件 2 为 true 时执行的代码
-  }
-else
-  {
-  当条件 1 和 条件 2 都不为 true 时执行的代码
-  }
-
+```javascript
+if (condition1) {
+  // 当条件 1 为 true 时执行的代码
+}
+else if (condition2) {
+  // 当条件 2 为 true 时执行的代码
+}
+else {
+  // 当条件 1 和 条件 2 都不为 true 时执行的代码
+}
 ```
 
 实例
 
 如果时间小于 10:00，则将发送问候 "Good morning"，否则如果时间小于 20:00，则发送问候 "Good day"，否则发送问候 "Good evening"：
 
-```
-if (time<10)
-  {
-  x="Good morning";
-  }
-else if (time<20)
-  {
-  x="Good day";
-  }
-else
-  {
-  x="Good evening";
-  }
+```javascript
+if (time < 10) {
+  x = "Good morning";
+}
+else if (time < 20) {
+  x = "Good day";
+}
+else {
+  x = "Good evening";
+}
 ```
 
 x 的结果是：
@@ -143,17 +128,16 @@ Good day
 
 **语法**
 
-```
-switch(n)
-{
-case 1:
-  执行代码块 1
-  break;
-case 2:
-  执行代码块 2
-  break;
-default:
-  n 与 case 1 和 case 2 不同时执行的代码
+```javascript
+switch (n) {
+  case 1:
+    // 执行代码块 1
+    break;
+  case 2:
+    // 执行代码块 2
+    break;
+  default:
+  // n 与 case 1 和 case 2 不同时执行的代码
 }
 ```
 
@@ -163,33 +147,31 @@ default:
 
 显示今日的周名称。请注意 Sunday=0, Monday=1, Tuesday=2, 等等：
 
-```
-var day=new Date().getDay();
-switch (day)
-{
-case 0:
-  x="Today it's Sunday";
-  break;
-case 1:
-  x="Today it's Monday";
-  break;
-case 2:
-  x="Today it's Tuesday";
-  break;
-case 3:
-  x="Today it's Wednesday";
-  break;
-case 4:
-  x="Today it's Thursday";
-  break;
-case 5:
-  x="Today it's Friday";
-  break;
-case 6:
-  x="Today it's Saturday";
-  break;
+```javascript
+var day = new Date().getDay();
+switch (day) {
+  case 0:
+    x = "Today it's Sunday";
+    break;
+  case 1:
+    x = "Today it's Monday";
+    break;
+  case 2:
+    x = "Today it's Tuesday";
+    break;
+  case 3:
+    x = "Today it's Wednesday";
+    break;
+  case 4:
+    x = "Today it's Thursday";
+    break;
+  case 5:
+    x = "Today it's Friday";
+    break;
+  case 6:
+    x = "Today it's Saturday";
+    break;
 }
-
 ```
 
 x 的结果：
@@ -206,20 +188,18 @@ Today it's Wednesday
 
 如果今天不是周六或周日，则会输出默认的消息：
 
-```
-var day=new Date().getDay();
-switch (day)
-{
-case 6:
-  x="Today it's Saturday";
-  break;
-case 0:
-  x="Today it's Sunday";
-  break;
-default:
-  x="Looking forward to the Weekend";
+```javascript
+var day = new Date().getDay();
+switch (day) {
+  case 6:
+    x = "Today it's Saturday";
+    break;
+  case 0:
+    x = "Today it's Sunday";
+    break;
+  default:
+    x = "Looking forward to the Weekend";
 }
-
 ```
 
 x 的结果：
@@ -236,7 +216,7 @@ Looking forward to the Weekend
 
 我们可以这样输出数组的值：
 
-```
+```javascript
 document.write(cars[0] + "<br>");
 document.write(cars[1] + "<br>");
 document.write(cars[2] + "<br>");
@@ -247,10 +227,9 @@ document.write(cars[5] + "<br>");
 
 不过通常我们这样写：
 
-```
-for (var i=0;i<cars.length;i++)
-{
-document.write(cars[i] + "<br>");
+```javascript
+for (var i = 0; i < cars.length; i++) {
+  document.write(cars[i] + "<br>");
 }
 ```
 
@@ -267,12 +246,10 @@ for 循环是您在希望创建循环时常会用到的工具。
 
 下面是 for 循环的语法：
 
-```
-for (语句 1; 语句 2; 语句 3)
-  {
-  被执行的代码块
-  }
-
+```javascript
+for (语句 1; 语句 2; 语句 3) {
+  // 被执行的代码块
+}
 ```
 
 *语句 1* 在循环（代码块）开始前执行
@@ -283,11 +260,10 @@ for (语句 1; 语句 2; 语句 3)
 
 **实例**
 
-```
-for (var i=0; i<5; i++)
-  {
-  x=x + "The number is " + i + "<br>";
-  }
+```javascript
+for (var i = 0; i < 5; i++) {
+  x = x + "The number is " + i + "<br>";
+}
 ```
 
 从上面的例子中，您可以看到：
@@ -308,23 +284,20 @@ Statement 3 在每次代码块已被执行后增加一个值 (i++)。
 
 **实例:**
 
-```
-for (var i=0,len=cars.length; i<len; i++)
-{
-document.write(cars[i] + "<br>");
+```javascript
+for (var i = 0, len = cars.length; i < len; i++) {
+  document.write(cars[i] + "<br>");
 }
-
 ```
 
 同时您还可以省略语句 1（比如在循环开始前已经设置了值时）：
 
 **实例:**
 
-```
-var i=2,len=cars.length;
-for (; i<len; i++)
-{
-document.write(cars[i] + "<br>");
+```javascript
+var i = 2, len = cars.length;
+for (; i < len; i++) {
+  document.write(cars[i] + "<br>");
 }
 ```
 
@@ -350,12 +323,11 @@ document.write(cars[i] + "<br>");
 
 **实例:**
 
-```
-var i=0,len=cars.length;
-for (; i<len; )
-{
-document.write(cars[i] + "<br>");
-i++;
+```javascript
+var i = 0, len = cars.length;
+for (; i < len;) {
+  document.write(cars[i] + "<br>");
+  i++;
 }
 ```
 
@@ -365,13 +337,11 @@ JavaScript for/in 语句循环遍历对象的属性：
 
 **实例**
 
-```
-var person={fname:"John",lname:"Doe",age:25};
-
-for (x in person)
-  {
-  txt=txt + person[x];
-  }
+```javascript
+var person = {fname: "John", lname: "Doe", age: 25};
+for (x in person) {
+  txt = txt + person[x];
+}
 ```
 
 您将在有关 JavaScript 对象的章节学到更多有关 for / in 循环的知识。
@@ -384,24 +354,21 @@ While 循环会在指定条件为真时循环执行代码块。
 
 **语法**
 
-```
-while (条件)
-  {
-  需要执行的代码
-  }
-
+```javascript
+while (condition) {
+  // 需要执行的代码
+}
 ```
 
 **实例**
 
 本例中的循环将继续运行，只要变量 i 小于 5：
 
-```
-while (i<5)
-  {
-  x=x + "The number is " + i + "<br>";
+```javascript
+while (i < 5) {
+  x = x + "The number is " + i + "<br>";
   i++;
-  }
+}
 ```
 
 提示：如果您忘记增加条件中所用变量的值，该循环永远不会结束。该可能导致浏览器崩溃。
@@ -412,27 +379,25 @@ do/while 循环是 while 循环的变体。该循环会执行一次代码块，�
 
 **语法**
 
-```
+```javascript
 do
-  {
-  需要执行的代码
-  }
-while (条件);
-
+{
+  // 需要执行的代码
+}
+while (condition);
 ```
 
 **实例**
 
 下面的例子使用 do/while 循环。该循环至少会执行一次，即使条件是 false，隐藏代码块会在条件被测试前执行：
 
-```
+```javascript
 do
-  {
-  x=x + "The number is " + i + "<br>";
+{
+  x = x + "The number is " + i + "<br>";
   i++;
-  }
-while (i<5);
-
+}
+while (i < 5);
 ```
 
 别忘记增加条件中所用变量的值，否则循环永远不会结束！
@@ -445,13 +410,12 @@ while (i<5);
 
 本例中的循环使用 for 循环来显示 cars 数组中的所有值：
 
-```
-cars=["BMW","Volvo","Saab","Ford"];
-var i=0;
-for (;cars[i];)
-{
-document.write(cars[i] + "<br>");
-i++;
+```javascript
+cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+for (; cars[i];) {
+  document.write(cars[i] + "<br>");
+  i++;
 }
 ```
 
@@ -459,13 +423,12 @@ i++;
 
 本例中的循环使用使用 while 循环来显示 cars 数组中的所有值：
 
-```
-cars=["BMW","Volvo","Saab","Ford"];
-var i=0;
-while (cars[i])
-{
-document.write(cars[i] + "<br>");
-i++;
+```javascript
+cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+while (cars[i]) {
+  document.write(cars[i] + "<br>");
+  i++;
 }
 ```
 
@@ -485,25 +448,22 @@ break 语句跳出循环后，会继续执行该循环之后的代码（如果�
 
 **实例**
 
-```
-for (i=0;i<10;i++)
-  {
-  if (i==3)
-    {
+```javascript
+for (i = 0; i < 10; i++) {
+  if (i == 3) {
     break;
-    }
-  x=x + "The number is " + i + "<br>";
   }
+  x = x + "The number is " + i + "<br>";
+}
 ```
 
 由于这个 if 语句只有一行代码，所以可以省略花括号：
 
-```
-for (i=0;i<10;i++)
-  {
-  if (i==3) break;
-  x=x + "The number is " + i + "<br>";
-  }
+```javascript
+for (i = 0; i < 10; i++) {
+  if (i == 3) break;
+  x = x + "The number is " + i + "<br>";
+}
 ```
 
 ### continue
@@ -514,10 +474,9 @@ continue 语句中断循环中的迭代，如果出现了指定的条件，然�
 
 实例
 
-```
-for (i=0;i<=10;i++)
- {
- if (i==3) continue;
-  x=x + "The number is " + i + "<br>";
-  }
+```javascript
+for (i = 0; i <= 10; i++) {
+  if (i == 3) continue;
+  x = x + "The number is " + i + "<br>";
+}
 ```
