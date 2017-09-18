@@ -1,13 +1,13 @@
 {
   "gitbook": "3.2.2",
-  "title": "javascript-notes",
+  "title": "js-notes",
   "description": "JavaScript 学习笔记",
   "author": "Zhang Peng",
   "language": "zh-hans",
   "root": "./docs",
   "links": {
     "sidebar": {
-      "javascript-notes": "https://github.com/zp1024/javascript-notes"
+      "js-notes": "https://github.com/zp1024/js-notes"
     }
   },
   "plugins": [
@@ -45,7 +45,7 @@
       }
     },
     "edit-link": {
-      "base": "https://github.com/zp1024/javascript-notes/blob/master",
+      "base": "https://github.com/zp1024/js-notes/blob/master/docs",
       "label": "编辑此页面"
     },
     "github": {

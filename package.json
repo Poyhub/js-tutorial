@@ -1,15 +1,15 @@
 {
-  "name": "javascript-notes",
+  "name": "js-notes",
   "description": "JavaScript 学习笔记",
   "scripts": {
     "clean": "rimraf _book",
     "prepare": "gitbook install",
-    "build": "gitbook build -g zp1024/javascript-notes",
+    "build": "gitbook build ./ --log=debug --debug",
     "start": "gitbook serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zp1024/javascript-notes.git"
+    "url": "https://github.com/zp1024/js-notes.git"
   },
   "keywords": [
     "javascript"
@@ -17,9 +17,9 @@
   "author": "Zhang Peng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zp1024/javascript-notes/issues"
+    "url": "https://github.com/zp1024/js-notes/issues"
   },
-  "homepage": "https://github.com/zp1024/javascript-notes",
+  "homepage": "https://github.com/zp1024/js-notes",
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "rimraf": "^2.3.4"
