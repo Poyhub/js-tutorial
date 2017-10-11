@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zp1024/js-notes.git"
+    "url": "https://github.com/dunwu/js-notes.git"
   },
   "keywords": [
     "javascript"
@@ -17,9 +17,9 @@
   "author": "Zhang Peng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zp1024/js-notes/issues"
+    "url": "https://github.com/dunwu/js-notes/issues"
   },
-  "homepage": "https://github.com/zp1024/js-notes",
+  "homepage": "https://github.com/dunwu/js-notes",
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "rimraf": "^2.3.4"
